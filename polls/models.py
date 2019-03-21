@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 import datetime
 
+
 class Question(models.Model):
     question_text = models.CharField('question text', max_length=200)
     pub_date = models.DateTimeField('date published')
